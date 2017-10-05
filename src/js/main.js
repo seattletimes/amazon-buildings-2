@@ -37,6 +37,7 @@ var getColor = function(d) {
      return value == "1" ? '#e6550d' :
      		value == "2" ? '#ffeda0' :
      		value == "3" ? '#fdae6b' :
+        value == "4" ? '#bfd730' :
             // value >= 10.00 ? '#addd8e' :
             // value >= 0 ? '#f7fcb9' :
              
@@ -58,8 +59,8 @@ var onEachFeature = function(feature, layer) {
 var style = function(feature) {
     var s = {
       fillColor: getColor(feature.properties),
-      weight: 1.5,
-      opacity: .1,
+      weight: 1,
+      opacity: .5,
       color: '#000',
       fillOpacity: 0.6
     };
